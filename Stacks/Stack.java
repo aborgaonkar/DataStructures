@@ -1,3 +1,4 @@
+package Stacks;
 
 public class Stack {
 	private int size;
