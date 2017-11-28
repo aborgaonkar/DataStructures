@@ -1,3 +1,9 @@
+/*
+ Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+For example, given nums = [0, 1, 0, 3, 12], after calling your function, nums should be [1, 3, 12, 0, 0].
+
+*/
+
 package Arrays;
 import java.util.Arrays;
 
@@ -19,7 +25,7 @@ public class ValueShiftToRight {
 		return Arrays.toString(nums);
 	}
 	public static void main(String args[]) {
-		int[] nums = {1,0,2,0,0,0,9,3,0};
+		int[] nums = {0, 1, 0, 3, 12};
 		int valueToShift = 0;
 		System.out.println(shiftValuesToRight(nums,valueToShift));
 	}
