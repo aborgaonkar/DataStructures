@@ -21,7 +21,6 @@ public class LinkedList {
 		ListNode newNode = new ListNode(item);
 		ListNode p,q;
 		for(p = head; (q = p.getNext()) != null; p = q);
-		System.out.println("-->"+p.getData());
 		p.setNext(newNode);
 		length++;
 		return head;
@@ -46,9 +45,10 @@ public class LinkedList {
 	
 	public static void printList(ListNode head) {
 		while(head != null) {
-			System.out.println(head.getData());
+			System.out.print(head.getData()+"--> ");
 			head = head.getNext();
 		}
+		System.out.println();
 	}
 	
 	public static int sizeOfLinkedList() {
