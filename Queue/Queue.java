@@ -54,4 +54,7 @@ public class Queue {
 		System.out.println(queue.deque());
 		System.out.println(queue.deque());
 	}
+	public boolean isEmpty() {
+		return size == 0;
+	}
 }
